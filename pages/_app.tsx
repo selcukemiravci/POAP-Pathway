@@ -12,23 +12,22 @@ import Header from "../components/header";
 // Change this to the chain your app is built for.
 // You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
 const activeChain = "goerli";
+const walletConfig = paperWallet({
+  paperClientId: process.env.NEXT_PUBLIC_PAPER_CLIENT_ID
+});
+
+const smartWalletConfig = smartWallet(walletConfig, {
+  factoryAddress: "0xc182827dF66A1fD9ADd9a39130D8dd6074F8F610",
+  gasless: true
+});
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
       activeChain={activeChain}
-      supportedWallets={[
-        smartWallet({
-          factoryAddress: "0xc182827dF66A1fD9ADd9a39130D8dd6074F8F610",
-          gasless: true,
-          personalWallets: [
-            paperWallet({
-              paperClientId: process.env.NEXT_PUBLIC_PAPER_CLIENT_ID,
-            }),
-          ],
-        }),
-      ]}
+      supportedWallets={[smartWalletConfig]}
     >
       <Header />
       <Component {...pageProps} />
@@ -36,5 +35,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     </ThirdwebProvider>
   );
 }
+
 
 export default MyApp;
