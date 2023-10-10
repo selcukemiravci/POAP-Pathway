@@ -1,56 +1,33 @@
-# CRA JavaScript Starter
+## Getting Started
 
-Starter kit to build with Create React App and thirdweb without additional initial configuration.
+**PWA Demo**
 
-## Installation
+Showcases:
 
-Install the template with [thirdweb create](https://portal.thirdweb.com/cli/create)
-
-```bash
- npx thirdweb create --template cra-javascript-starter
-```
-
-## Run Locally
-
-Install dependencies
-
-```bash
-yarn
-```
-
-Start the server
-
-```bash
-yarn start
-```
+- Email & social auth (embedded wallets)
+- → AA wallets (ERC-4337 for signless + gasless UX)
+- → thirdweb React SDK (PWA dApp template)
 
 ## Environment Variables
 
-To run this project, you will need to add the `CLIENT_ID` variables to your .env file.
+To run this project, you will need to add environment variables. Check the `.env.example` file for all the environment variables required and add it to `.env.local` file or set them up on your hosting provider.
 
-You can generate your `clientId` and `secretKey` via thirdweb's [dashboard](https://thirdweb.com/create-api-key).
+You can get a thridweb clientId from https://thirdweb.com/create-api-key
 
-## Deployment
+You can get a Paper clientId from https://withpaper.com/sign-in
 
-Deploy a copy of your application to IPFS using the following command:
+## Learn More
 
-```bash
-yarn deploy
-```
+To learn more about thirdweb and Next.js, take a look at the following resources:
 
-## Additional Resources
-
-- [Documentation](https://portal.thirdweb.com)
+- [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
+- [thirdweb TypeScript Documentation](https://docs.thirdweb.com/typescript) - learn about our JavaScript/TypeScript SDK.
+- [thirdweb Portal](https://docs.thirdweb.com) - check our guides and development resources.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Templates](https://thirdweb.com/templates)
-- [Video Tutorials](https://youtube.com/thirdweb_)
-- [Blog](https://blog.thirdweb.com)
 
-## Contributing
+You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
 
-Contributions and [feedback](https://feedback.thirdweb.com) are always welcome!
+## Join our Discord!
 
-Please visit our [open source page](https://thirdweb.com/open-source) for more information.
-
-## Need help?
-
-For help, join the [discord](https://discord.gg/thirdweb) or visit our [support page](https://support.thirdweb.com).
+For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).

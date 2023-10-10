@@ -1,56 +1,29 @@
 {
-  "name": "poap-pathway",
-  "homepage": ".",
+  "name": "pwatest",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "next build && next export && npx thirdweb@latest upload out"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^14.4.3",
-    "@thirdweb-dev/react": "^3",
-    "@thirdweb-dev/sdk": "^3",
-    "assert": "^2.0.0",
-    "browserify-zlib": "latest",
+    "@thirdweb-dev/react": "0.0.0-dev-a3a16e1-20230824233206",
+    "@thirdweb-dev/sdk": "^3.10.55",
     "ethers": "^5",
-    "http": "npm:http-browserify",
-    "http-browserify": "latest",
-    "https": "npm:https-browserify",
-    "https-browserify": "latest",
+    "next": "^13",
     "next-pwa": "^5.6.0",
     "react": "^18.2",
-    "react-dom": "^18.2",
-    "react-scripts": "^5.0.1",
-    "stream": "^0.0.2",
-    "url": "latest",
-    "web-vitals": "^3.1.0",
-    "zlib": "npm:browserify-zlib"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "yarn build && npx thirdweb@latest upload build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "react-dom": "^18.2"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@types/node": "^18.11.11",
+    "@types/react": "^18",
+    "eslint": "^8.29.0",
+    "eslint-config-next": "^13",
+    "typescript": "^4.9.4"
   }
 }
