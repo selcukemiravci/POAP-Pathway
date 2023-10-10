@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           gasless: true,
           personalWallets: [
             paperWallet({
-              paperClientId: process.env.NEXT_PUBLIC_PAPER_CLIENT_ID || "84b2f546-faf6-4895-8aa1-e543c2e88175", // Get your paper client id from https://withpaper.com/sign-in
+              paperClientId: process.env.NEXT_PUBLIC_PAPER_CLIENT_ID,
             }),
           ],
         }),
