@@ -1,0 +1,1 @@
+self.__BUILD_MANIFEST={__rewrites:{afterFiles:[],beforeFiles:[],fallback:[]},"/":["static/chunks/pages/index-271b4b4ba533c555.js"],"/_error":["static/chunks/pages/_error-82b79221b9ed784b.js"],"/nfts":["static/chunks/pages/nfts-5b17822bee5786d1.js"],sortedPages:["/","/_app","/_error","/nfts"]},self.__BUILD_MANIFEST_CB&&self.__BUILD_MANIFEST_CB();
