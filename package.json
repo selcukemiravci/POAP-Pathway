@@ -1,5 +1,6 @@
 {
-  "name": "pwatest",
+  "name": "POAP-Pathway",
+  "homepage": "https://selcukemiravci.github.io/POAP-Pathway/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "gh-pages -d out"
-  },
+    "deploy": "next build && next export && gh-pages -d out"},
   "dependencies": {
     "@thirdweb-dev/react": "^4.0.1",
     "@thirdweb-dev/sdk": "^3.10.55",
