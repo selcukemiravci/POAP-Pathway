@@ -7,8 +7,7 @@ const withPWA = require("next-pwa")({
 });
 
 module.exports = withPWA({
-  basePath: '/POAP-Pathway',
-  assetPrefix: '/POAP-Pathway/',  
+  basePath: "",
   reactStrictMode: true,
   images: { unoptimized: true },
 });

@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         coinbaseWallet(),
         walletConnect(),
         localWallet(),
-        embeddedWallet({ recommended: true }),
+        embeddedWallet(),
         rainbowWallet(),
       ]}
     >
