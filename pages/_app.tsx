@@ -12,12 +12,29 @@ import "../styles/globals.css";
 import Navbar from "../components/navbar";
 import Header from "../components/header";
 
-const activeChain = "goerli";  // You can keep this or change to "mumbai" based on your preference
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
-      activeChain={activeChain}
+    activeChain={{
+      // === Required information for connecting to the network === \\
+      chainId: 1440002, // Chain ID of the network
+      // Array of RPC URLs to use
+      rpc: ["rpc-evm-sidechain.xrpl.org "],
+
+      // === Information for adding the network to your wallet (how it will appear for first time users) === \\
+      // Information about the chain's native currency (i.e. the currency that is used to pay for gas)
+      nativeCurrency: {
+        decimals: 18,
+        name: "XRPL EVM Sidechain",
+        symbol: "XRP",
+      },
+      shortName: "XRP", // Display value shown in the wallet UI
+      slug: "xrp", // Display value shown in the wallet UI
+      testnet: true, // Boolean indicating whether the chain is a testnet or mainnet
+      chain: "XRPL", // Name of the network
+      name: "XRPL EVM Sidechain", // Name of the network
+    }}
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
       supportedWallets={[
         metamaskWallet({ recommended: true }),

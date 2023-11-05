@@ -22,6 +22,7 @@ PWAs are web applications that operate like regular websites but boast of functi
 
 Platforms like Friend.tech have paved the way, demonstrating the untapped potential of decentralized social networks in the Web3.0 realm. Their innovative model, where one can invest in a friend's social network and tokenize their credibility, hints at the transformative nature of Web3.0.
 
+
 ---
 
 ## 🎯 Objectives
