@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const withPWA = require("next-pwa")({
   dest: "public",
   register: true,
@@ -7,7 +6,8 @@ const withPWA = require("next-pwa")({
 });
 
 module.exports = withPWA({
-  basePath: "",
+  basePath: '/POAP-Pathway',
+  assetPrefix: '/POAP-Pathway',
   reactStrictMode: true,
   images: { unoptimized: true },
 });
