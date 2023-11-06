@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       // === Required information for connecting to the network === \\
       chainId: 1440002, // Chain ID of the network
       // Array of RPC URLs to use
-      rpc: ["rpc-evm-sidechain.xrpl.org "],
+      rpc: ["rpc-evm-sidechain.xrpl.org"],
 
       // === Information for adding the network to your wallet (how it will appear for first time users) === \\
       // Information about the chain's native currency (i.e. the currency that is used to pay for gas)
