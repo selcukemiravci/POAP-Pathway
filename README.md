@@ -12,7 +12,7 @@
 
 ## 🌐 Overview
 
-As the Web3.0 ecosystem continues to evolve and gain traction, Progressive Web Apps (PWAs) are emerging as a significant player in this new digital frontier. Drawing on the successful experience from the XRPL Pioneers project, POAP Pathway aims to be a cutting-edge PWA app integrating Thirdweb and the XRPL EVM-side chain. This integration will offer users a seamless sign-in experience using magic-link/web2 and an enriched NFT claiming process.
+As the Web3.0 ecosystem continues to evolve and gain traction, Progressive Web Apps (PWAs) are emerging as a significant player in this new digital frontier. POAP Pathway aims to be a cutting-edge PWA app integrating Thirdweb and the XRPL EVM-side chain. This integration will offer users a seamless sign-in experience using magic-link/web2 and an enriched NFT claiming process.
 
 ---
 
@@ -35,12 +35,29 @@ Platforms like Friend.tech have paved the way, demonstrating the untapped potent
 
 ## 📖 How It Works
 
-- **User Sign-In**: Users are greeted with a swift and secure sign-in experience using magic-link/web2 authentication.
-- **NFT Browsing**: The platform will display a curated selection of NFTs, allowing users to browse and cherry-pick their favorites.
-- **NFT Claiming**: Once an NFT is selected, the robust XRPL EVM-side chain takes over, managing the claim process and ensuring a successful transfer to the user's digital wallet.
-- **User Dashboard**: Users have a personalized dashboard, a space where they can view their claimed NFTs, peruse transaction history, and access other relevant details.
+To run this project, you will need to create a clientId and an ERC 1155 contract on XRPL EVM Sidechain which can be created through [thirdweb](https://thirdweb.com/dashboard/contracts/deploy). 
 
+When you are creating the contract make sure to use a custom network as the current XRPL EVM Sidechain on thirdweb is not upto date. 
+
+Use this information to create the custom network for the XRPL EVM Sidechain:
+
+```
+Network Name: XRPL EVM Sidechain
+New RPC URL: rpc-evm-sidechain.xrpl.org 
+Chain ID: 1440002
+Currency Symbol: XRP
+Block Explorer: evm-sidechain.xrpl.org
+```
+
+Once contract is created you will need a clientId from [https://thirdweb.com/create-api-key](thirdweb) which you can use in a .env file or call directly in the `pages/App.tsx`. Once the API keys are created, make sure to add your own allowed domains. After all required dependencies are installed, the PWA application can be ran by executing `yarn dev`. Once the server is started navigate to `http://localhost:3000/POAP-Pathway` to see live changes and test.
+
+⚠️ Note: The main branch is published on goerli contract for the full functionality purposes as the production build of XRPL EVM Sidechain has errors due to custom network by thirdweb. If you would like to test out the app on XRPL EVM Sidechain firmly navigate to the *dev branch* and run the server by executing *yarn dev* and navigate to http://localhost:3000 to see live changes and test the app.
 ---
+
+Environment Variables
+To run this project, you will need to create a clientId and set it in an .env.local file. Check the .env.example file for the required variable name.
+
+You can get a thridweb clientId from `https://thirdweb.com/create-api-key`. Please, make sure to enable the Embedded Wallets service.
 
 ## 🛠 Tech Stack
 
