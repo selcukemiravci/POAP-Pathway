@@ -52,12 +52,8 @@ Block Explorer: evm-sidechain.xrpl.org
 Once contract is created you will need a clientId from [https://thirdweb.com/create-api-key](thirdweb) which you can use in a .env file or call directly in the `pages/App.tsx`. Once the API keys are created, make sure to add your own allowed domains. After all required dependencies are installed, the PWA application can be ran by executing `yarn dev`. Once the server is started navigate to `http://localhost:3000/POAP-Pathway` to see live changes and test.
 
 ⚠️ Note: The main branch is published on goerli contract for the full functionality purposes as the production build of XRPL EVM Sidechain has errors due to custom network by thirdweb. If you would like to test out the app on XRPL EVM Sidechain firmly navigate to the *dev branch* and run the server by executing *yarn dev* and navigate to http://localhost:3000 to see live changes and test the app.
+
 ---
-
-Environment Variables
-To run this project, you will need to create a clientId and set it in an .env.local file. Check the .env.example file for the required variable name.
-
-You can get a thridweb clientId from `https://thirdweb.com/create-api-key`. Please, make sure to enable the Embedded Wallets service.
 
 ## 🛠 Tech Stack
 
