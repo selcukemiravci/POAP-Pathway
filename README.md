@@ -14,6 +14,8 @@
 
 As the Web3.0 ecosystem continues to evolve and gain traction, Progressive Web Apps (PWAs) are emerging as a significant player in this new digital frontier. POAP Pathway aims to be a cutting-edge PWA app integrating Thirdweb and the XRPL EVM-side chain. This integration will offer users a seamless sign-in experience using magic-link/web2 and an enriched NFT claiming process.
 
+Here is the application demo [video](https://www.youtube.com/watch?v=HXQqpwWpZkU)
+
 ---
 
 ## 📖 Background
