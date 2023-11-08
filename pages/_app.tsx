@@ -20,22 +20,22 @@ function MyApp({ Component, pageProps }: AppProps) {
       // === Required information for connecting to the network === \\
       chainId: 1440002, // Chain ID of the network
       // Array of RPC URLs to use
-      rpc: ["rpc-evm-sidechain.xrpl.org "],
+      rpc: ["rpc-evm-sidechain.xrpl.org"],
 
       // === Information for adding the network to your wallet (how it will appear for first time users) === \\
       // Information about the chain's native currency (i.e. the currency that is used to pay for gas)
       nativeCurrency: {
         decimals: 18,
         name: "XRPL EVM Sidechain",
-        symbol: "XRP",
+        symbol: "xrpl",
       },
-      shortName: "XRP", // Display value shown in the wallet UI
-      slug: "xrp", // Display value shown in the wallet UI
+      shortName: "xprlevm", // Display value shown in the wallet UI
+      slug: "xprlevm", // Display value shown in the wallet UI
       testnet: true, // Boolean indicating whether the chain is a testnet or mainnet
-      chain: "XRPL", // Name of the network
-      name: "XRPL EVM Sidechain", // Name of the network
+      chain: "XRPL EVM Sidechain", // Name of the network
+      name: "XRPL EVM Sidechain Testnet", // Name of the network
     }}
-      clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
+      clientId= "79e84b40b40d9bfb8d979db500f698b8"
       supportedWallets={[
         metamaskWallet({ recommended: true }),
         coinbaseWallet(),
@@ -53,3 +53,23 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 export default MyApp;
+
+// {{
+//   // === Required information for connecting to the network === \\
+//   chainId: 1440002, // Chain ID of the network
+//   // Array of RPC URLs to use
+//   rpc: ["rpc-evm-sidechain.xrpl.org "],
+
+//   // === Information for adding the network to your wallet (how it will appear for first time users) === \\
+//   // Information about the chain's native currency (i.e. the currency that is used to pay for gas)
+//   nativeCurrency: {
+//     decimals: 18,
+//     name: "XRPL EVM Sidechain",
+//     symbol: "XRP",
+//   },
+//   shortName: "XRP", // Display value shown in the wallet UI
+//   slug: "xrp", // Display value shown in the wallet UI
+//   testnet: true, // Boolean indicating whether the chain is a testnet or mainnet
+//   chain: "XRPL", // Name of the network
+//   name: "XRPL EVM Sidechain", // Name of the network
+// }}
