@@ -16,6 +16,8 @@ As the Web3.0 ecosystem continues to evolve and gain traction, Progressive Web A
 
 Here is the application demo [video](https://www.youtube.com/watch?v=HXQqpwWpZkU)
 
+![POAP Pathway](https://github.com/selcukemiravci/POAP-Pathway/assets/53044008/3f7045be-3e31-4da6-99d5-f929a49f937f)
+
 ---
 
 ## 📖 Background
